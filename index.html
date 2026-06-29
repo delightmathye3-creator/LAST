@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan's Hygiene Services & Cleaning</title>
+    <!-- Whimsical and clean modern fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Comfortaa:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Whimsical, flowing fresh green and white gradient background */
+            background: linear-gradient(135deg, #eef9f5 0%, #ffffff 50%, #e3f4ee 100%);
+            background-size: 200% 200%;
+            animation: freshFlow 12s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Comfortaa', sans-serif;
+            color: #2d3e38;
+        }
+
+        @keyframes freshFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            /* Floating glass panel with crisp white styling */
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            border-radius: 35px;
+            padding: 40px 24px;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(162, 210, 195, 0.25);
+            text-align: center;
+        }
+
+        .rating-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #ffd700, #ffb700); /* Attractiveness Gold */
+            color: #4a3b00;
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 32px;
+            color: #1b4332; /* Rich Pine Green */
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            font-size: 13px;
+            color: #52b788; /* Fresh Mint Green */
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #556b62;
+            margin-bottom: 30px;
+        }
+
+        /* Whimsical Service Items with soft highlight colors */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(82, 183, 136, 0.15);
+            border-radius: 18px;
+            padding: 16px 10px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #2d3e38;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+        }
+
+        /* Specific attractive custom pastel borders for each box */
+        .sc-1 { border-left: 4px solid #52b788; } /* Mint */
+        .sc-2 { border-left: 4px solid #b39ddb; } /* Lavender Accent */
+        .sc-3 { border-left: 4px solid #a8dadc; } /* Soft Blue Accent */
+        .sc-4 { border-left: 4px solid #ffb703; } /* Gold Accent */
+
+        .service-card span {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        /* Premium WhatsApp Booking Call to Action */
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #2d6a4f 0%, #52b788 100%);
+            color: #ffffff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 25px rgba(82, 183, 136, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .cta-btn:active {
+            transform: scale(0.96);
+            box-shadow: 0 5px 15px rgba(82, 183, 136, 0.2);
+        }
+
+        .hours-text {
+            display: block;
+            margin-top: 20px;
+            font-size: 11px;
+            color: #8da197;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Five Star Review Badge -->
+        <div class="rating-badge">✦ 5-Star Rated Cleaners ✦</div>
+        
+        <h1>Alan's Hygiene Services & Cleaning</h1>
+        <p class="location">📍 Dan, Tzaneen & Surrounding Areas</p>
+        
+        <p class="tagline">Leaving your environments spotless, fresh, and pristine. Professional residential, commercial, and safe pest control treatments tailored perfectly for your space.</p>
+        
+        <!-- Whimsical Interactive Service Layout -->
+        <div class="services-grid">
+            <div class="service-card sc-1">
+                <span>✨</span> Deep Cleaning
+            </div>
+            <div class="service-card sc-2">
+                <span>📦</span> Move-In / Out
+            </div>
+            <div class="service-card sc-3">
+                <span>🏢</span> Commercial
+            </div>
+            <div class="service-card sc-4">
+                <span>🌿</span> Pest Control
+            </div>
+        </div>
+        
+        <!-- Direct Interactive WhatsApp Button Link -->
+        <a href="https://wa.me/27817560978" class="cta-btn" target="_blank">
+            💬 Book via WhatsApp
+        </a>
+        
+        <span class="hours-text">Open Mon-Fri: 07:00–17:00 | Sat: 07:00–16:00 | Sun: 13:00–18:00</span>
+    </div>
+
+</body>
+</html>
+
